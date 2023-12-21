@@ -1,2 +1,2 @@
 # niaquinn.github.io
-Personal Website
+Personal Website - welcome to my website
