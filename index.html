@@ -1,17 +1,152 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Personal Website</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    div {
+        text-align: center;
+    }
+
+    /*the list on the left*/
+    header {
+        background-color: black; 
+        padding: 30px;
+        text-align: center;
+        font-size: 40px;
+        color: white;
+    }
+
+    /*the list on the left*/
+    nav {
+        float: left;
+        width: 25%;
+        background-color: rgb(50, 50, 50);
+        padding: 20px; 
+        height: 300px;
+    }
+
+    /*style for the list on the left*/
+    nav ul { 
+        list-style-type: disc;
+        padding: 5; 
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    /*the links*/
+    a {
+        color: lightblue;
+    }
+
+
+    /*the main article*/
+    article {
+        float: left;
+        padding: 20px;
+        width: 75%;
+        background-color: white;
+        height: 300px;
+    }
+
+    /*section after the article*/
+    section::after {
+        content: none;
+        display: table;
+        clear: both;
+    }
+    
+    /*the footer*/
+    footer {
+        background-color: rgb(100, 100, 100);
+        padding: 10px; 
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*the image*/
+    img {
+        float: right;
+        margin-left: 20px;
+        max-width: 20%;
+        height: auto;
+    }
+
+    @media (max-width: 600px) {
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+</style>
 </head>
+
 <body>
-	<h1>My Personal Website</h1>
-	<p>Welcome to my personal website!</p>
-	<p>Here are some things you might want to know about me:</p>
-	<ul>
-		<li>I love hiking and camping.</li>
-		<li>I'm a big fan of science fiction movies.</li>
-		<li>I'm a software engineer by profession.</li>
-	</ul>
-	<p>Feel free to contact me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+
+    <!-- header -->
+	<header>Nia Quinn</header>
+
+    <!-- list on the left -->
+	<section>
+        <nav>
+            <ul>
+                <li> <!-- 1st element : email -->
+                    <a href="mailto:niaaquinn@gmail.com">
+                         Email
+                    </a>
+                </li>
+
+                <li> <!-- 2nd element : github-->
+                    <a href="https://github.com/niaquinn">
+                         GitHub
+                    </a>
+                </li>
+
+                <li> <!-- 3rd element : linkedin -->
+                    <a href="https://www.linkedin.com/in/nia-quinn-9625141b6/">
+                        LinkedIn
+                    </a>
+                </li>
+
+                <!-- TODO -->
+                <li> <!-- 4th element : resume -->
+                    <a href="">
+                        Resume
+                    </a>
+                </li>
+
+                <li> <!-- 5th element : student & senior penpals -->
+                    <a href="https://studentseniorpenpa.wixsite.com/my-site/home">
+                        Student & Senior PenPals
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <img src="headshot.jpg" alt="Headshot"> 
+
+            <p>
+               I'm Nia Quinn, a second year student at Northeastern University studying
+               Computer Science and Math. Stop by and check out some stuff that I've been working on!
+            </p>
+
+            <p>
+                After joining Northeastern's Unmanned Aerial Vehicle (NUAV) team in January
+                of 2023, I became enthralled with the possibilites of computer science.
+             </p>
+    
+        </article>
+    </section>
+
+    <footer>
+        <p>Thank you!</p>
+      </footer>
+
 </body>
 </html>
