@@ -7,6 +7,10 @@
         text-align: center;
     }
 
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     /*the list on the left*/
     header {
         background-color: black; 
@@ -19,18 +23,17 @@
     /*the list on the left*/
     nav {
         float: left;
-        width: 25%;
+        width: 20%;
         background-color: rgb(50, 50, 50);
         padding: 20px; 
-        height: 300px;
+        height: 62%;
     }
 
     /*style for the list on the left*/
     nav ul { 
         list-style-type: disc;
-        padding: 5; 
+        padding: 20px; 
     }
-
     li {
         margin-bottom: 5px;
     }
@@ -40,14 +43,13 @@
         color: lightblue;
     }
 
-
     /*the main article*/
     article {
         float: left;
         padding: 20px;
-        width: 75%;
+        width: 80%;
         background-color: white;
-        height: 300px;
+        height: auto;
     }
 
     /*section after the article*/
@@ -67,12 +69,23 @@
         align-items: center;
     }
 
-    /*the image*/
+    /*the images*/
     img {
+        max-width: 15%;
+        height: auto;
+    }
+    img.right {
         float: right;
         margin-left: 20px;
-        max-width: 20%;
-        height: auto;
+    }
+    img.left {
+        float: left;
+        margin-right: 20px;
+    }
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (max-width: 600px) {
@@ -129,24 +142,51 @@
 
         <article>
 
-            <img src="headshot.jpg" alt="Headshot"> 
+            <img src="headshot.png" alt="Headshot" class="right"> 
 
             <p>
-               I'm Nia Quinn, a second year student at Northeastern University studying
-               Computer Science and Math. Stop by and check out some stuff that I've been working on!
+                Welcome! I'm Nia Quinn, a second-year Computer Science and Math student at Northeastern University with a 
+                passion for optimization and algorithm design. During my time at Northeastern, I've had the opportunity
+                to explore my interests through a variety of activities, including being a Teaching Assistant for 
+                an introductory computer science course, being a software co-lead as part of AerospaceNU's Unmanned
+                Aerial Vehicle (NUAV) team, leading the Club Running team as a captain, and even whipping up dumplings with
+                the Cooking Club. These experiences have taught me valuable skills in leadership, project management, 
+                and collaboration.
             </p>
 
             <p>
-                After joining Northeastern's Unmanned Aerial Vehicle (NUAV) team in January
-                of 2023, I became enthralled with the possibilites of computer science.
-             </p>
-    
+                After joining NUAV in January of 2023, the realm of possibility expanded vastly. With the help of experienced
+                upperclassmen, I was introduced to exciting projects and dove headfirst into the software team. Our project?
+                Obstacle avoidance. Using WeBots, robotics simulation software running in a Linux VM, we 
+                we communicated with the simulated drone via ArduPilot commands. A camera stream from the drone was accessed
+                via Sockets and was to be used as input to a Proximal Policy Optimization algorithm, that once trained, would
+                allow a drone to be placed in a random environment and avoid obstacles along a path. The repo for this is starred
+                in the link to my GitHub on the left.
+            </p>
+
+            <p>
+                TODO add stuff here about
+                TODO do i need the stuff about a project / student & senior penpals
+            </p>
+
+            <img src="travel.png" alt="Ireland 2023" class="left">
+
+            <p>
+                When I'm not in school, I love attending concerts, traveling, reading, and spending time with friends.
+                The photo on the left was taken in Dingle, County Kerry, Ireland after my sister and I hiked a hill 
+                overlooking the port. I'm excited to participate in the Dialogue of Civilizations program in Leuven, 
+                Belgium this upcoming summer, where I'll have the opportunity to learn database design and foundational 
+                data science concepts while working on a team to create a minimally viable product for the Belgian government.
+                I'm looking forward to the challenge of working in a new environment and getting to know a new region of the 
+                world.
+            </p>
+
         </article>
     </section>
 
     <footer>
-        <p>Thank you!</p>
-      </footer>
+        <p>Thanks for stopping by.</p>
+    </footer>
 
 </body>
 </html>
